@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+                
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Project 2" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Nguyen Linh Dan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <img src="img/white%20logo%20no%20bg.png" class="logo" alt="logo">
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="order.html">ORDER NOW</a></li>
+                <li><a href="feature.html" class="active">FEATURES</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    
+    <!-- Feature List -->
+    
+    <h1 id="featureTitle">Feature List</h1>
+    <div class=featureList>
+        
+         <div class="featureItem">
+            <aside></aside>
+            <div class="feature_content">
+                <article>
+                    <h2>Highlighted menu item</h2>
+                    <p>Available on all pages. <br/> Highlight the menu item in the navigator corresponding to the current web page.</p>
+                    <a href="index.html">View feature</a>
+                </article>
+            </div>
+        </div>
+        
+        <div class="featureItem">
+            <aside></aside>
+            <div class="feature_content">
+                <article>
+                    <h2>Automatic input of billing address</h2> 
+                    <p>When the checkbox is checked, billing address will be filled with the delivery address automatically</p>
+                    <a href="order.html">View feature</a>
+                </article>
+            </div>
+        </div>
+        
+        <div class="featureItem">
+            <aside></aside>
+            <div class="feature_content">
+                <article>
+                    <h2>Adaptive credit card length</h2> 
+                    <p>16 digits for Visa and Mastercard, 15 digits for American Express.</p>
+                    <a href="order.html">View feature</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div class="footer_container featurepage">
+            <img src="img/white%20logo%20no%20bg.png" class="footer_logo" alt="logo">
+            <div class="footer_location">
+                <p>Location</p>
+                <p>123 King Street</p>
+                <p>0123 456 789</p>
+            </div>
+            <div class="footer_nav">
+            <ul>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="order.html">ORDER NOW</a></li>
+            </ul>
+            </div>
+            <div class="footer_socialmedia">
+                <div class="icon_location"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div class="icon_location"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <div class="icon_location"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+    
